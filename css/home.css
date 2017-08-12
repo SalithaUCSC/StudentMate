@@ -1,0 +1,108 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+}
+
+.nav #ul-nav{
+    height: 80px;
+    list-style: none;
+    background-color: #2c3e50;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+#ul-nav li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.logged {
+    color: whitesmoke;
+    font-size: 20px;
+	margin-left: 900px;
+	margin-top: -50px; 
+}
+
+.home {
+    padding-top: 10px;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+#user:hover {
+	color: #2980b9;
+}
+
+.btn {
+    margin-top: -30px;
+    float: right;
+    margin-right: 50px;
+	background-color: grey;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    color: #FFF;
+}
+
+#outbtn {
+    background-color: #e74c3c;
+}
+
+#outbtn:hover {
+    background-color: #c0392b;
+}
+
+.midcontent {
+	background-color: #95A5A6;
+	width: 80%;
+	min-height: 1000px;
+	float: left;
+}
+#logo {
+	width: 180px;
+	height: 190px;
+	margin: auto;
+	display: block;
+	margin-top: 30px;
+}
+
+#recent  {
+	margin-left: 40px; 
+	width:220px;
+}
+.newspost {
+	margin-top: 30px;
+	width: 1000px;
+	height: 350px;
+	margin: auto;
+	display: block;
+	background-color: #95A5A6;
+}
+#author {
+	width: 80px;
+	height: 80px;
+	margin-left: 10px;
+	margin-top: 10px;
+	background-color: #95A5A6;
+}
+#newscontent {
+	padding: 10px;
+	text-align: justify;
+	width: 960px;
+	height: 180px;
+	margin: 10px;
+	display: block;
+	background-color: #ABB7B7;
+	border: none;
+	border-radius: 4px;
+}
+#status {
+	text-transform: uppercase;
+	float: right;
+	margin-right: 850px;
+	line-height: 7px;
+	margin-top: -90px;
+}

@@ -1,0 +1,240 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+}
+
+.regbody {
+    height: 870px;
+    background-color: #95A5A6;
+}
+.container{
+    height: 520px;
+    background-color: #95A5A6;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0;
+    padding-top: 1px;
+}
+.container2{
+    height: 750px;
+    background-color: #D4D0D0;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0;
+    padding-top: 1px;
+}
+.container3{
+    height: 850px;
+    background-color: #34492e;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0;
+    padding-top: 1px;
+}
+.try {
+    font-weight: bold;
+    text-transform:uppercase; 
+    text-align: center;
+}
+
+.wrapper {
+    text-align: center;
+    width: 300px;
+    height: 450px;
+    background-color: #ABB7B7;
+    margin: 0 auto;
+    margin-top: -450px; 
+    margin-right: 150px;
+    border-radius: 5px;
+} 
+.wrapper:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.wrapper img {
+    width: 120px;
+    height: 120px;
+    margin-top: 30px;
+}
+
+.form-input {
+    margin: 15px 25px;
+    text-align: center;
+    height: 40px;
+    width: 200px;
+    border: none;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    color: #FFF;
+}
+
+#logbtn {
+    background-color: #1A82E9;
+}
+#logbtn:hover {
+    background-color: #185E9C;
+}
+
+
+.wrapper2 {
+    text-align: center;
+    width: 500px;
+    height: 800px;
+    background-color: #DADFE1;
+    margin: 0 auto;
+    margin-right: 60px;
+    margin-top: 30px; 
+    margin-bottom: 30px;
+    border-radius: 5px;
+    float: right;
+} 
+.wrapper3 {
+    text-align: center;
+    width: 700px;
+    height: 800px;
+    background-color: #BDC3C7;
+    margin: 0 auto;
+    margin-left: 60px;
+    margin-top: 30px; 
+    margin-bottom: 30px;
+    border-radius: 5px;
+    float: left;
+} 
+
+.list {
+    padding: 100px;
+    position: absolute;
+    left: 370px;
+    top: 550px;
+    transform: translate(-50%, -50%);
+}
+
+.list li {
+    margin-left: 20px;
+    list-style: none;
+    float: left;
+    margin-top: auto;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background:#fff;
+    border-radius: 50%;
+    font-size: 50px;
+    position: relative;
+    transition: .5s ease-in-out;
+    color: #262626;
+    z-index: 1;
+}
+.list li:before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #1A82E9;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: .5s ease-in-out;
+    z-index: -1;
+}
+
+.list li:hover:before {
+    transform: scale(0.9);
+}
+
+.list:hover {
+    color: #fff;
+}
+
+.needs {
+    margin-left: -40px;
+    margin-top: 180px;
+}
+.needs li{
+    color: #2C3E50;
+    list-style: none;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.wrapper2 img {
+    width: 120px;
+    height: 120px;
+    margin-top: 80px;
+}
+.wrapper2:hover, .wrapper3:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.form-input2 {
+    margin: 15px 75px;
+    text-align: center;
+    height: 40px;
+    width: 300px;
+    border: none;
+}
+.msg {
+    font-size: 20px;
+    margin-top: -740px;
+    padding: 5px;
+    margin-left: 70px;
+    margin-right: 70px; 
+    text-align: center;
+    border-radius: 4px;
+}
+
+#errmsg {
+    color: #D80D0A;
+}
+
+#sucmsg {
+    color: #08962E;
+}
+
+#message {
+    font-size: 20px;
+}
+#regbtn {
+    background-color: #0EB354;
+}
+#regbtn:hover {
+    background-color: #068D3F;
+}
+#canbtn {
+    background-color: #D91E18;
+}
+#canbtn:hover {
+    background-color: #CF000F;
+}
+#outbtn {
+    background-color: #e74c3c;
+}
+#outbtn:hover {
+    background-color: #c0392b;
+}
+.wrapper1 {
+    text-align: center;
+    width: 740px;
+    height: 450px;
+    background-color: inherit;
+    margin-left: 150px;
+    margin-top: 30px; 
+    border-radius: 5px;
+} 
+
+.wrapper1 p {
+    font-size: 25px;
+    padding: 20px;
+}
+.wrapper1 img {
+    width: 200px;
+    height: 210px;
+    margin-top: 10px;
+}
+
+

@@ -1,0 +1,158 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+}
+
+.nav #ul-nav{
+    height: 80px;
+    list-style: none;
+    background-color: #2c3e50;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+#ul-nav li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.logged {
+    color: whitesmoke;
+    font-size: 20px;
+	margin-left: 900px;
+	margin-top: -50px; 
+}
+
+.home {
+    padding-top: 10px;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+#user:hover {
+	color: #2980b9;
+}
+
+.btn {
+    margin-top: -30px;
+    float: right;
+    margin-right: 50px;
+	background-color: grey;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    color: #FFF;
+}
+
+#outbtn {
+    background-color: #e74c3c;
+}
+
+#outbtn:hover {
+    background-color: #c0392b;
+}
+
+.midcontent {
+	background-color: #95A5A6;
+	width: 100%;
+	float: left;
+}
+#logo {
+	width: 180px;
+	height: 190px;
+	margin: auto;
+	display: block;
+	margin-top: 30px;
+}
+
+.regclub {
+    text-align: center;
+    width: 600px;
+    background-color: grey;
+    margin-left: 150px;
+    margin-top: 30px; 
+    border-radius: 5px;
+} 
+
+.regclub p {
+    font-size: 25px;
+    padding: 20px;
+}
+
+.wrapper {
+    text-align: center;
+    width: 600px;
+    height: 1040px;
+    background-color: #ABB7B7;
+    margin: 0 auto;
+	margin-top: 40px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+} 
+.wrapper:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.wrapper img {
+	padding-top: 60px;
+	width: 150px;
+	height: 150px;
+
+}
+.form-input {
+    margin: 15px 50px;
+    margin-top: 5px;
+    text-align: center;
+    height: 40px;
+    width: 400px;
+    border: none;
+}
+
+.btnr {
+	margin: 10px 50px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    color: #FFF;
+}
+#regbtn {
+    background-color: #0EB354;
+}
+#regbtn:hover {
+    background-color: #068D3F;
+}
+#canbtn {
+    background-color: #D91E18;
+}
+#canbtn:hover {
+    background-color: #CF000F;
+}
+
+.msg {
+    font-size: 20px;
+    margin-top: -40px;
+    padding: 5px;
+    margin-left: 70px;
+    margin-right: 70px; 
+    text-align: center;
+    border-radius: 4px;
+}
+.usersuc{
+    margin-top: -990px;
+    color: green;
+    font-size: 20px;
+}
+.usererror {
+    margin-top: -990px;
+    color: red;
+    font-size: 20px;
+}
+#errmsg {
+    color: #D80D0A;
+}
+
+#sucmsg {
+    color: #08962E;
+}
