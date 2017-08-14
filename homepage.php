@@ -17,7 +17,7 @@
             <div class='nav'>
                 <ul id='ul-nav'>
                   
-                    <li class='home'><a href='index.php'>StudentMate</a></li>
+                    <li class='home'><a href='#'>StudentMate</a></li>
                     <li class="logged">Logged in as <a href="profile.php" id="user"><?php echo $_SESSION['username'];?></a></li>
                     <li><form method='POST' action='homepage.php'><input type='submit' name='out' class='btn' id='outbtn' value='LOG OUT'></form></li>
                 </ul>
