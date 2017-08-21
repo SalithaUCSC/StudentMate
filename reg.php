@@ -1,6 +1,9 @@
 <?php
 	require 'db_con.php';
 ?>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,7 +55,7 @@
 			<div class='form-input'>
 				<input type='text' name='fname' placeholder="Full name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full name'" class='form-input2' required="required">
 			</div>
-<!-- 			<div class='form-input'>
+<!-- 		<div class='form-input'>
 				<input type='text' name='faculty' placeholder='Faculty' class='form-input2' required="required">
 			</div>
 			<div class='form-input'>
@@ -66,17 +69,18 @@
 			</div>
 			<div class='form-input'>
 				<input type='text' name='nic' placeholder="National ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'National ID'" class='form-input2' required="required">
-			</div>
+			</div><br><br>
+<!--            <input type='file' name='avatar' required="required">-->
 			<div class='form-input'>
 				<input type='password' name='password' id="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" class='form-input2' required="required">
 			</div>
 			<div class='form-input'>
 				<input type='password' name='cpassword' id="cpassword" placeholder="Confirm Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm Password'" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'" class='form-input2' required="required" onkeyup='check();'>
-			</div></br>
-<!-- 			<div class='form-input'>
-				<input type='file' name='avatar' id="avatar" placeholder='Profile Image' class='form-input2' accept="image/*" required="required">
-			</div></br> -->
-			<span id='message'></span></br><br>
+			</div><br>
+ 			
+				
+			 
+			<span id='message'></span><br><br>
 			<input type='submit' name='reg' value='SIGN UP' class='btn' id='logbtn'><br><br>
 		
 			<a href="index.php"><input type="button" name="back" value="Back to Login" id="canbtn" class="btn"></a>
@@ -91,8 +95,11 @@
 				$email = $_POST['email'];
 				$contact = $_POST['contact'];
 				$nic = $_POST['nic'];
+//                $avatar = $target_file_user;
 				$password = $_POST['password'];
 				$cpassword = $_POST['cpassword'];
+
+
 	
 
 			if ($password == $cpassword) {
@@ -102,7 +109,7 @@
 
 				if (mysqli_num_rows($query_run1)>0) {
 
-					echo "<div class='msg' id='errmsg'>User already exists..Try another one! Click Reset</div><br>";
+					echo "<div class='msg' id='errmsg'>User already exists! Click Reset</div><br>";
 				} else {
 
 					$query2 = "INSERT INTO customer VALUES ('$username','$name','$email','$contact','$nic')";

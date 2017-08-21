@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	require 'db_con.php';
 ?>
 
 <!DOCTYPE html>
@@ -46,21 +47,29 @@
 		</div>
 
 		<div class="midcontent">
-			<h1 id="recent">RECENT NEWS</h1>
-				<div class="newspost">
-					<div><img src="./images/user1.png" id="author"></div>
-					<div id="status"><p>Title</p><p>Date</p><p>Time</p></div>
-					<div id="newscontent">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat ornare orci sollicitudin tempus. Ut vehicula neque nec ligula malesuada consectetur. Nulla mollis, orci quis luctus pulvinar, elit diam viverra ex, non tempus magna turpis nec augue. Donec eu mi tempor, malesuada quam in, varius est. Suspendisse dictum sit amet magna interdum interdum. Quisque finibus eget lectus quis sollicitudin. Etiam lacinia ligula eu lacus hendrerit, ut dapibus ligula cursus. Donec ac eros ligula. Mauris eu dignissim nunc, sed eleifend lorem. Quisque cursus felis et efficitur porttitor. Proin sed est consequat, rutrum purus eu, volutpat odio.</p>
+			<p id="recent">RECENT ANNOUNCEMENTS</p>
+<?php
+
+$sql = "SELECT * FROM news ORDER BY newsid DESC";
+
+$res2 = mysqli_query($conn,$sql);
+
+
+foreach($res2 as $row){
+	echo "
+				
+					<div><img src='./images/admin.png' id='author'></div>
+					<div id='status'><p id='tname'>"; echo $row['tname']; echo "</p><p>"; echo $row['date']; echo "</p><p>"; echo $row['time']; echo  "<p id='adm'>Posted by ADMIN</p>"; echo "</div>
+					<div id='newscontent'>
+						<p>"; echo $row['content']; echo "</p>
 					</div>
-				</div>
-								<div class="newspost">
-					<div><img src="./images/user1.png" id="author"></div>
-					<div id="status"><p>Title</p><p>Date</p><p>Time</p></div>
-					<div id="newscontent">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat ornare orci sollicitudin tempus. Ut vehicula neque nec ligula malesuada consectetur. Nulla mollis, orci quis luctus pulvinar, elit diam viverra ex, non tempus magna turpis nec augue. Donec eu mi tempor, malesuada quam in, varius est. Suspendisse dictum sit amet magna interdum interdum. Quisque finibus eget lectus quis sollicitudin. Etiam lacinia ligula eu lacus hendrerit, ut dapibus ligula cursus. Donec ac eros ligula. Mauris eu dignissim nunc, sed eleifend lorem. Quisque cursus felis et efficitur porttitor. Proin sed est consequat, rutrum purus eu, volutpat odio.</p>
-					</div>
-				</div>
+				";
+
+
+}
+
+?>
+
 		</div>
 
         <?php include('./import/footer.php'); ?>

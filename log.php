@@ -18,9 +18,12 @@
 		if($username == 'admin') {
 			$_SESSION['username'] = $username;
 			header("location:admin_ui.php");
-		}else {
+		} elseif ($username == 'facadmin') {
 			$_SESSION['username'] = $username;
-        header("location:homepage.php");
+			header("location:faculty_ui.php");	
+		}  else {
+			$_SESSION['username'] = $username;
+        	header("location:homepage.php");
     	}
 	}else{
 		header("Location: index.php?error=1"); //error is for incorrect username or password

@@ -1,6 +1,14 @@
 <?php
 	session_start();
 	require 'db_con.php';
+
+	$username = $_GET['username'];
+
+	$sql = "SELECT * FROM customer WHERE username='$username'";
+
+	$res = mysqli_query($conn,$sql);
+
+	$user = mysqli_fetch_array($res);
 ?>
 
 <!DOCTYPE html>
@@ -10,6 +18,12 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./css/profile.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style type="text/css">
+		input {
+			padding: 10px 20px;
+		}
+	</style>
 </head>
 <body>
 
@@ -43,26 +57,26 @@
 							<table border=0>
 							  	<tr>
 									<td class='field'>Username : </td>
-									<td class='field'>$row[0]</td>
+									<td class='field'><input type='text' value='$row[0]' readonly name='username'></td>
 								</tr>
 								<tr>
 									<td class='field'>Full Name : </td>
-									<td class='field'>$row[1]</td>
+									<td class='field'><input type='text' value='$row[1]'  name='fname'></td>
 								</tr>
 								<tr>
 									<td class='field'>Email : </td>
-									<td class='field'>$row[2]</td>
+									<td class='field'><input type='email' value='$row[2]'  name='email'></td>
 								</tr>
 								<tr>
 									<td class='field'>Mobile No : </td>
-									<td class='field'>$row[3]</td>
+									<td class='field'><input type='text' value='$row[3]'  name='contact'></td>
 								</tr>
 								<tr>
 									<td class='field'>NIC: </td>
-									<td class='field'>$row[4]</td>
+									<td class='field'><input type='text' value='$row[4]'  name='nic'></td>
 								</tr>
                                 <tr>
-                                    <td><a href='profile_update.php?username=$row[0]'><input type='button' name='update' value='Update Profile' id='updatebtn'></a></td>
+                                    <td><input type='submit' name='reg' value='Update Profile' id='updatebtn'></td>
                                 </tr>
 							</table>
                             </form>

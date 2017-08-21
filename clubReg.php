@@ -9,6 +9,7 @@
 	<title>Clubs | StudentMate</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./css/club1.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
@@ -26,6 +27,7 @@
         </header>
 
 		<div class="midcontent">
+		<center><h1>Register Here</h1></center>
 		    <div class='wrapper'>
 		    <img src='./images/user1.png'><br><br>
 		    
@@ -121,7 +123,7 @@
 		?>
 
 			</div>
-			<?php include('./import/footer.php'); ?>
+			
 		</div>
               
 </body>
