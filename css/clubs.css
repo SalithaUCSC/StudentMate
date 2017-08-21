@@ -27,6 +27,9 @@
 	background-color: #95A5A6;
 }
 
+#midtitle {
+	font-size: 30px;
+}
 #newscontent {
 	padding: 10px;
 	text-align: justify;

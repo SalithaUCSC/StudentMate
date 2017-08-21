@@ -52,8 +52,8 @@ body{
 
 .wrapper {
     text-align: center;
-    width: 600px;
-    height: 600px;
+    width: 650px;
+    height: 650px;
     background-color: #ABB7B7;
     margin: 0 auto;
 	margin-top: 40px;
@@ -94,4 +94,15 @@ table {
 #backhome a:hover {
     color: #2980b9;
     transition: .5s;
+}
+
+#updatebtn {
+    background-color: #068D3F;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+}
+
+#updatebtn:hover {
+    background-color: #1A82E9;
 }

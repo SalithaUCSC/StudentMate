@@ -1,0 +1,168 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+}
+
+.btn {
+    margin-top: -30px;
+    float: right;
+    margin-right: 50px;
+	background-color: grey;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    color: #FFF;
+}
+
+.btn2 {
+	margin: 155px;
+	padding: 10px 20px;
+	border-radius: 4px;
+	border: none;
+	color: #FFF;
+	background-color: grey;
+	margin-top: 0px;
+	font-size: 16px;
+}
+#enter-btn {
+	background-color: #0EB354;	
+}
+
+#enter-btn:hover {
+	background-color: #343735;
+}
+
+#outbtn {
+    background-color: #e74c3c;
+}
+
+#outbtn:hover {
+    background-color: #c0392b;
+}
+.btn {
+    margin-top: -30px;
+    float: right;
+    margin-right: 50px;
+
+}
+
+
+.taskbox {
+	height: 450px !important;
+	margin-left: 12px;
+	margin-right: 1px;
+	margin-bottom: 50px;
+	border-radius: 5px;
+	width: 32%;
+	float: left;
+	height: 100px;
+	background-color: #ABB7B7;
+}
+
+.taskbox img {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	margin-top: 20px;
+}
+
+.task-image {
+	margin: 160px !important;
+	margin-top: 50px !important;	
+}
+
+.news-input {
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	width: 600px;
+}
+#news-title {
+	width: 600px;
+
+}
+.news-tab {
+	margin: auto;
+}
+.news-tab label {
+	margin-right: 30px;
+}
+.newsbtn {
+	border-radius: 3px;
+	border: none;
+	padding: 10px 20px;
+	background-color: #1A82E9;
+}
+.newsbtn:hover {
+	background-color: #185E9C;
+}
+.resetbtn {
+	border-radius: 3px;
+	border: none;
+	padding: 10px 20px;
+	background-color: #e74c3c;
+}
+
+.resetbtn:hover {
+	background-color: #c0392b;
+}
+
+.btns {
+	margin-left: 400px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#publishmsg {
+	text-align: center;
+	font-size: 20px;
+	color: green;
+	margin-bottom: 100px;
+}
+
+#errpubmsg {
+	text-align: center;
+	font-size: 20px;
+	color: red;
+	margin-bottom: 100px;	
+} 
+
+.factab {
+	margin: auto;
+}
+
+.factab label {
+	font-size: 20px;
+	line-height: 40px;
+}
+
+table input, select {
+	padding: 10px;
+	width: 150px;
+}
+
+.facbtn {
+	margin-left: 630px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-radius: 3px;
+	border: none;
+	padding: 10px 20px;
+	background-color: #1A82E9;
+}
+.facbtn:hover {
+	background-color: #185E9C;
+}
+
+#backhome {
+    padding-top: 20px;
+}
+#backhome a{
+    text-decoration: none;
+    color: #011520;
+    font-size: 25px;
+}
+#backhome a:hover {
+    color: #2980b9;
+    transition: .5s;
+}

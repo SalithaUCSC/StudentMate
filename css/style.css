@@ -4,7 +4,7 @@ body{
 }
 
 .regbody {
-    height: 870px;
+    height: 960px;
     background-color: #95A5A6;
 }
 .container{
@@ -82,7 +82,7 @@ body{
 .wrapper2 {
     text-align: center;
     width: 500px;
-    height: 800px;
+    height: 900px;
     background-color: #DADFE1;
     margin: 0 auto;
     margin-right: 60px;
@@ -94,7 +94,7 @@ body{
 .wrapper3 {
     text-align: center;
     width: 700px;
-    height: 800px;
+    height: 900px;
     background-color: #BDC3C7;
     margin: 0 auto;
     margin-left: 60px;
@@ -179,8 +179,8 @@ body{
     border: none;
 }
 .msg {
-    font-size: 20px;
-    margin-top: -740px;
+    font-size: 16px;
+    margin-top: -780px;
     padding: 5px;
     margin-left: 70px;
     margin-right: 70px; 

@@ -1,8 +1,10 @@
 .sidebar {
     background-color: #ABB7B7;
 	width: 20%;
-	min-height: 1000px;
+	height: 1809px;
 	float: left;
+	/*position: fixed;*/
+	z-index: 1;
 }
 #logo {
 	width: 180px;
@@ -15,24 +17,33 @@
 .options li a{
 	font-size: 20px;
 	text-decoration: none;
-	color: black;padding-left:60px;
+	color: black;
+	padding-left:60px;
 }
 
 .options li{
 	list-style: none;
-	padding: 20px;
+	padding: 20px;	
 }
 
 .options li:hover{
-
+	margin: auto;
 	background-color: #6C7A89;
 }
 
-.options .active a:link , .options .active a:visited {
+.options .active a {
+	color: whitesmoke;
+	font-size: 25px;
+}
+/*.options .active a:link{
+	background-color: #6C7A89;padding-right:120px;	padding-top: 20px; 
+	padding-bottom: 20px;
+}*/
+/*.options .active a:link , .options .active a:visited {
 	background-color:  #6C7A89;	
-	padding-right:90px; 
-	padding-left: 90px;	
+	padding-right:90px; 	
+
 	padding-top: 20px; 
 	padding-bottom: 20px; 
-	margin: auto;
-}
+
+}*/
