@@ -22,8 +22,7 @@
                 <ul id='ul-nav'>
                   
                     <li class='home'><a href='#'>StudentMate</a></li>
-                    <li class="logged"><?php echo $_SESSION['faculty'];?>
-                    <?php echo $_SESSION['username'];?></li>
+                    <li class="logged">Logged as Faculty admin</li>
                     <li><form method='POST' action='admin_ui.php'><input type='submit' name='out' class='btn' id='outbtn' value='LOG OUT'></form></li>
                 </ul>
                 <?php
@@ -45,10 +44,10 @@
 <form action="add_news.php" method="POST">
 
 	<table class="news-tab">
-		<tr>
+<!-- 		<tr>
 			<td><label>Faculty</label></td>
-			<td><input type="text" name="tfaculty" class="news-input" id="news-title" value=<?php echo $_SESSION['faculty'];?> readonly></td>
-		</tr>
+			<td><input type="text" name="tfaculty" class="news-input" id="news-title"  readonly></td>
+		</tr> -->
 		<tr>
 			<td><label>Title</label></td>
 			<td><input type="text" name="tname" class="news-input" id="news-title" required="required"></td>

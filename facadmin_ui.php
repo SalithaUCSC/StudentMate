@@ -19,8 +19,7 @@
                 <ul id='ul-nav'>
                   
                     <li class='home'><a href='#'>StudentMate</a></li>
-                    <li class="logged"><?php echo $_SESSION['faculty'];?>
-                    <?php echo $_SESSION['username'];?></li>
+                    <li class="logged">Logged as Faculty admin</li>
                     <li><form method='POST' action='admin_ui.php'><input type='submit' name='out' class='btn' id='outbtn' value='LOG OUT'></form></li>
                 </ul>
                 <?php

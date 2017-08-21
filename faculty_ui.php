@@ -1,5 +1,5 @@
 <?php	
-	session_start();
+	
 	require 'db_con.php';
 ?>
 
@@ -19,7 +19,7 @@
             <div class='nav'>
                 <ul id='ul-nav'>
                   
-                    <li class='home'><a href='#'>StudentMate</a></li>
+                    <li class='home'><a href='faculty_ui.php'>StudentMate</a></li>
                     <li class="logged">Faculty Admins</li>
                     <li><form method='POST' action='#'><input type='submit' name='out' class='btn' id='outbtn' value='LOG OUT'></form></li>
                 </ul>
@@ -36,7 +36,7 @@
 
 		<div class="midcontent" style="height: 510px;">
 
-			<div style="margin-top: 100px;"><center><h1>Faculty Admin Navigation</h1></center></div>
+			<div style="margin-top: 100px; margin-bottom: 50px;"><center><h1>Faculty Admin Navigation</h1></center></div>
 
 			<form action="faculty_ui.php" method="POST">
 				<table class="factab">
@@ -64,7 +64,7 @@
 			</form>
 
 			<?php
-
+			session_start();
 			if (isset($_POST['faclog'])) {
 
 				$faculty = $_POST['faculty'];
@@ -76,21 +76,21 @@
 				$sql = "SELECT * FROM fac_admins WHERE faculty='$faculty' AND username='$username' AND password='$pwd'";
 				
 				$res = mysqli_query($conn,$sql);
-				print_r($sql);
 
-		// 		if ($res) {
+
+				if ($res) {
 			
-		// 			if (mysqli_num_rows($res)>0) {
+					if (mysqli_num_rows($res)>0) {
 					
-		// 				$_SESSION['username'] = $username;
-		// 				$_SESSION['faculty'] = $faculty;
-		// 				header("location:facadmin_ui.php");
-		// 			}
+						$_SESSION['username'] = $username;
+						$_SESSION['faculty'] = $faculty;
+						header("location:facadmin_ui.php");
+					}
 						
-		// 			else {
-		// 			echo "error";
-		// 			}
-		// }
+					else {
+					echo "error";
+					}
+		}
 	}
 			?>
 		</div>
