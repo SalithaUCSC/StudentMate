@@ -13,6 +13,6 @@ echo "<div class='sidebar'>
 				<li><a href='#'>Timetable</a></li>
 			</div>
 		</div>";
-
+		
 
 ?>
