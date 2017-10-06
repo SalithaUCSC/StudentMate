@@ -1,0 +1,265 @@
+body {
+  margin-top: 50px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #DADFE1;
+  /*background-color: #E8E8F1;*/
+  /*font-family: 'Source Sans Pro', sans-serif;*/
+}
+
+#wrapper {
+  padding-left: 0;
+}
+
+#page-wrapper {
+  width: 100%;
+  padding: 5px 15px;
+  min-height: 800px;
+}
+
+footer {
+    background-color: black;
+    height: 60px;
+}
+.text-right {
+    padding-top: 10px;
+    padding-right: 10px;
+    color: whitesmoke;
+}
+#syslogo {
+  width: 20%;
+  height: 20%;
+}
+#tryoption {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 35px;
+}
+/* Nav Announcements */
+
+.announcement-heading {
+  font-size: 50px;
+  margin: 0;
+}
+
+.announcement-text {
+  margin: 0;
+}
+
+/* Table Headers */
+
+table.tablesorter thead {
+  cursor: pointer;
+}
+
+table.tablesorter thead tr th:hover {
+  background-color: #f5f5f5;
+}
+
+/* Flot Chart Containers */
+
+.flot-chart {
+  display: block;
+  height: 400px;
+}
+
+.flot-chart-content {
+  width: 100%;
+  height: 100%;
+}
+
+.fa {
+    padding-right: 5px !important;
+}
+.logo {
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    display: block;
+    margin-bottom: 40px;
+}
+.panel-title {
+    font-size: 16px;
+}
+
+.thumbnail img {
+    padding-top: 30px;
+}
+
+.wrapbox {
+    background-color: #ABB7B7;
+    width: 100%;
+    height: 500px;
+    padding:50px;
+    margin-top: 30px;
+}
+.wrapbox img {
+    margin: auto;
+    display: block;
+    width:90px;
+    height:90px;
+    margin-bottom: 30px;
+}
+.jumbotron {
+    margin-top: 30px;
+    padding: 20px;
+    padding-top: 50px;
+    height: 500px;
+    border-radius: 5px;
+}
+.jumbotron .container p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.jumbotron img {
+    margin: auto;
+    display: block;
+}
+.jumbotron .btn-primary{
+    margin: auto;
+    width: 100px;
+    display: block;
+}
+
+.thumbnail{
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.thumbnail:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+/* Edit Below to Customize Widths > 768px */
+
+
+@media (min-width:769px) {
+
+    .thumbnail{
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .thumbnail:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    form label p{
+        text-align: center;
+    }
+    .panel-heading p {
+        font-size: 12px;
+    }
+
+    .panel-title {
+        font-size: 16px;
+    }
+
+    .logo {
+        width:80px;
+        height:80px;
+        margin: auto;
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .form-horizontal label {
+        font-size: 15px !important;
+        color: black;
+    }
+    .jumbotron {
+        margin-top: 30px;
+        padding: 20px;
+        padding-top: 80px;
+        height: 500px;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    .jumbotron .container p {
+        text-align: justify;
+        font-size: 18px;
+    }
+    .jumbotron img {
+        margin: auto;
+        display: block;
+    }
+    .jumbotron .btn-primary{
+        margin: auto;
+        width: 100px;
+        display: block;
+    }
+    .form-horizontal .btn-primary {
+        margin: auto;
+        width: 100px;
+        display: block;
+    }
+    .wrapbox {
+        width: 25%;
+        height: 500px;
+        background-color: #ABB7B7;
+        padding:50px;
+        float: right;
+        margin: 30px;
+        margin-top: 30px;
+        border-radius: 5px;
+    }
+
+    .wrapbox:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .wrapbox img {
+        margin: auto;
+        display: block;
+        width:120px;
+        height:120px;
+        margin-bottom: 30px;
+    }
+    /* Wrappers */
+
+    #wrapper {
+        padding-left: 225px;
+    }
+
+    #page-wrapper {
+        padding: 15px 25px;
+    }
+
+    .thumbnail img {
+        padding-top: 30px;
+    }
+    /*logo*/
+    .logo {
+        width:180px;
+        height:180px;
+        display: block;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .navbar-inverse {
+        /*background-color: #202292;*/
+        background-color: black;
+    }
+
+    .navbar-inverse .navbar-nav>li>a:hover,
+    .navbar-inverse .navbar-nav>li>a:focus {
+        background-color: #080808;
+    }
+
+    .navbar-collapse {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    }
+
+@media screen and (max-width: 991px) and (min-width: 770px) {
+    .wrapbox {
+        margin: auto;
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
