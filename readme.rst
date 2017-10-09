@@ -15,6 +15,7 @@ How to use?
 3.There's a SQL file in the project folder called "ci_studentmate". You need to go to phpmyadmin and create a new dadtabase with this name. Then import the SQL file to this database.
 
 4.Then type in the URL bar of your web browser as "localhost/Projects". Then project folder will be there. Click on it!
+
 5.Login as a Student:
 	Username - salitha	&
 	Password - 111
