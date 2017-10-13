@@ -13,7 +13,7 @@
     </head>
     <body>
       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-           <a class="navbar-brand" href="<?php echo site_url('User'); ?>" style="font-size :30px;">STUDENTMATE</a>
+           <a class="navbar-brand" href="<?php echo site_url('Users/home'); ?>" style="font-size :30px;">STUDENTMATE</a>
       </nav>
 
       <div id="page-wrapper">
@@ -66,20 +66,26 @@
                     <div class="form-group">
                       <select name="faculty">
                         <option selected="selected" disabled="disabled">Select your faculty</option>
-                        <option value="ucsc">ucsc</option>
-                        <option value="mgt">mgt</option>
-                        <option value="science">science</option>
-                        <option value="arts">arts</option>
+                        <?php if (count($facs)): ?>
+
+                          <?php foreach ($facs as $row): ?>
+
+                            <option value="<?php echo $row->fac_value ?>"><?php echo $row->fac_name ?></option>
+
+                          <?php endforeach; ?>
+                        <?php else: ?>
+                            <option value="none"><?php echo "no faculties" ?></option>
+                        <?php endif ?>
                       </select>
                     </div>
                     <div class="form-group">
                         <label>Index Number</label>
                         <input type="text" class="form-control" name="indexno">
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <label>Profile Picture</label>
                         <input type="file" class="form-control" name="avatar">
-                    </div>
+                    </div> -->
                     <div class="form-group">
                         <label>Password</label>
                         <input type="password" class="form-control" id="password" name="password">
@@ -90,7 +96,7 @@
                     </div>
                     <span id='message'></span><br><br>
                     <button class="btn btn-primary" type="submit" name="clubreg">Register</button>
-                    <a href="<?php echo site_url('User') ?>" class="btn btn-link">Back to Login</a><br><br>
+                    <a href="<?php echo site_url('Users') ?>" class="btn btn-link">Back to Login</a><br><br>
 
                 <?php echo form_close(); ?>
 
