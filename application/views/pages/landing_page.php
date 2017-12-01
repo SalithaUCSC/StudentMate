@@ -8,8 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
-        <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/font-awesome/css/font-awesome.min.css">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     </head>
     <body>
       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -28,7 +29,7 @@
                               <br>
                               <img src="<?php echo base_url() ?>assets/images/logoNew.png" alt="logo" class="logo" >
                               <br><br>
-                              <a class="btn btn-primary" href="<?php echo site_url("User/Signup"); ?>" role="button">Sign Up</a>
+                              <a class="btn btn-primary" href="<?php echo site_url("Users/Signup"); ?>" role="button">Sign Up</a>
                         </div>
                     </div>
                 </div>
@@ -56,7 +57,7 @@
                         <br>
                         <div class="form-group input-group">
                             <button type="submit" class="btn btn-primary">LOGIN</button>
-                            <a href="<?php echo site_url("Home"); ?>" role="button" class="btn btn-default" style="margin-left: 20px;">RESET</a>
+                            <a href="<?php echo site_url("Users/home"); ?>" role="button" class="btn btn-default" style="margin-left: 20px;">RESET</a>
                         </div>
 
 
@@ -86,7 +87,7 @@
                       <h3>BUS ROUTES</h3>
                           <p>Find the bus routes for places where you want to go.</p>
 
-                      <p><a href="<?php echo base_url();?>index.php/Busroutes" class="btn btn-default" role="button">GO</a></p>
+                      <p><a href="#" class="btn btn-default" role="button">GO</a></p>
                     </div>
                   </div>
                 </div>
@@ -124,6 +125,6 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
   </body>
 </html>

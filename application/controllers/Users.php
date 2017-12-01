@@ -7,7 +7,7 @@ class Users extends CI_Controller{
         {
             parent::__construct();
 
-            $this->load->model('User_model');
+				$this->load->model('User_model');
 
         }
 
@@ -78,9 +78,9 @@ class Users extends CI_Controller{
 
               $this->User_model->insertUser();
 
-            //set message to be shown when registration is completed
-            $this->session->set_flashdata('success','You are registered! You can login now.');
-            redirect('users/Signup');
+              //set message to be shown when registration is completed
+              $this->session->set_flashdata('success','You are registered! You can login now.');
+              redirect('users/Signup');
 
             } else {
                 //$this->form_validation->set_message('is_unique', 'Username already exists!');

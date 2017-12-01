@@ -7,7 +7,7 @@ class FacAdmin extends CI_Controller{
   {
     parent::__construct();
     $this->load->model('FacAdmin_model');
-    //Codeigniter : Write Less Do More
+
   }
 
   public function index()
@@ -109,7 +109,7 @@ class FacAdmin extends CI_Controller{
 
   public function viewAllUsers() {
     $this->load->library('pagination');
-    $config['base_url'] = 'http://localhost/Projects/ciproject/FacAdmin/viewAllUsers';
+    $config['base_url'] = 'http://localhost/Projects/ciprojectTEST/FacAdmin/viewAllUsers';
     $config['total_rows'] = $this->FacAdmin_model->getUsersCount();
     $config['per_page'] = 5;
     $config['uri_segment'] = 3;
@@ -137,12 +137,13 @@ class FacAdmin extends CI_Controller{
     $data['link'] = $this->pagination->create_links();
     $data['records'] = $this->FacAdmin_model->getUsersPagintaion($config['per_page'], $page);
     $data['recs'] = $this->FacAdmin_model->getUsers();
+    $data['message'] = '';
     $this->load->view('pages/FacAdmin/viewUsers_page', $data);
   }
 
   public function deleteUser($user_id) {
     $this->FacAdmin_model->delete($user_id);
-    redirect('FacAdmin/viewAllUsers' );
+    redirect('FacAdmin/viewAllUsers');
   }
 
   public function addClubsByFacadmin()
@@ -371,6 +372,22 @@ class FacAdmin extends CI_Controller{
           $this->load->view('pages/FacAdmin/addNewClub_page');
           }
 
+  }
+
+  public function SearchUser()
+  {
+      $searchKey = $this->input->post('search');
+
+      if(isset($searchKey) and !empty($searchKey)){
+        $data['records'] = $this->FacAdmin_model->searchRecordUser($searchKey);
+        $data['recs'] = $this->FacAdmin_model->getUsers();
+        $data['link'] = '';
+        $data['message'] = 'Search Results';
+        $this->load->view('pages/FacAdmin/viewUsers_page' , $data);
+      }
+      else {
+        redirect('FacAdmin/viewAllUsers') ;
+      }
   }
 
 

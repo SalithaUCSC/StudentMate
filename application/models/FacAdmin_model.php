@@ -358,7 +358,23 @@ class FacAdmin_model extends CI_Model{
     redirect('FacAdmin/viewAllNews');
   }
 
+  public function searchRecordUser($searchKey)
+  {
+    $this->db->select('*');
+    $this->db->from('users');
+    $this->db->like('fname',$searchKey);
+    $this->db->or_like('username',$searchKey);
+    $this->db->or_like('email',$searchKey);
+    $this->db->or_like('indexno',$searchKey);
+    $query = $this->db->get();
 
+    if($query->num_rows()>0){
+      return $query->result();
+    }
+    else {
+      return $query->result();
+    }
+  }
 
 
 

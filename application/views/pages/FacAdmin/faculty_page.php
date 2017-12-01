@@ -8,9 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/home.css">
-        <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> -->
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/font-awesome/css/font-awesome.min.css">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     </head>
     <style type="text/css">
       .panel-footer a {
@@ -259,7 +259,7 @@
 
                                   <?php foreach ($usrlimit as $row): ?>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-user fa-fw"></i> <?php echo $row->username ?>
+                                    <i class="fa fa-user fa-fw"></i> <?php echo $row->fname ?>
                                     <span class="pull-right text-muted small"><em><?php echo $row->indexno ?></em>
                                     </span>
                                 </a>
@@ -328,33 +328,7 @@
                         <!-- /.panel-body -->
                     </div>
               </div>
-              <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-university fa-fw"></i> Recent News Posts
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="list-group">
-                              <?php if (count($nwslm)): ?>
 
-                                <?php foreach ($nwslm as $row): ?>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-file-text-o fa-fw"></i> <?php echo $row->tname ?>
-                                    <span class="pull-right text-muted small"><em>Date: <?php echo $row->date ?> Time: <?php echo $row->time ?></em>
-                                    </span>
-                                </a>
-                              <?php endforeach; ?>
-                            <?php else: ?>
-                                <center><p style="margin: 20px;">No news posts</p></center>
-                            <?php endif ?>
-                            </div>
-                            <!-- /.list-group -->
-                            <a href="<?php echo site_url('FacAdmin/viewAllNews') ?>" class="btn btn-default btn-block">View All Posts</a>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-              </div>
             </div>
 
 
@@ -373,6 +347,6 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
   </body>
 </html>
