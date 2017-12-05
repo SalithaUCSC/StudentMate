@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 04, 2017 at 06:12 PM
+-- Generation Time: Dec 05, 2017 at 01:29 AM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 7.0.13
 
@@ -147,7 +147,6 @@ CREATE TABLE `club_data` (
 INSERT INTO `club_data` (`c_id`, `c_name`, `c_value`, `c_faculty`) VALUES
 (1, 'IEEE Club', 'ieee', 'ucsc'),
 (2, 'FOS MEDIA', '', 'science'),
-(3, 'ISG', 'isaca', 'ucsc'),
 (6, 'Mozila', 'mozila', 'ucsc'),
 (9, 'Exploration  Club', 'exploration', 'ucsc'),
 (10, 'Rotract', 'rot', 'mgt');
@@ -260,21 +259,21 @@ CREATE TABLE `users` (
   `faculty` varchar(30) NOT NULL,
   `indexno` int(10) NOT NULL,
   `avatar` varchar(300) NOT NULL,
-  `password` varchar(80) NOT NULL
+  `password` varchar(80) NOT NULL,
+  `flag` int(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`user_id`, `username`, `fname`, `email`, `contact`, `faculty`, `indexno`, `avatar`, `password`) VALUES
-(2, 'saliya', 'saliya pool', 'poolsaliya@gmail.com', '0777123445', 'ucsc', 1321312, '', '6216f8a75fd5bb3d5f22b6f9958cdede3fc086c2'),
-(3, 'facadmin', 'Faculty Admin', 'facadmin@gmail.com', '0777123445', 'ucsc', 422143, '', '6216f8a75fd5bb3d5f22b6f9958cdede3fc086c2'),
-(4, 'admin', 'admin', 'admin@gmail.com', '3245523', 'none', 0, '', '6216f8a75fd5bb3d5f22b6f9958cdede3fc086c2'),
-(12, 'salitha', 'Salitha Chathuranga', 'salithachathuranga94@gmail.com', '0778787607', 'ucsc', 15020101, '', '6216f8a75fd5bb3d5f22b6f9958cdede3fc086c2'),
-(13, 'techpool', 'techpool bro', 'techpool94@gmail.com', '07787876071', 'ucsc', 15020101, '', '6216f8a75fd5bb3d5f22b6f9958cdede3fc086c2'),
-(14, 'pool123', 'saliya pool', 'poolsaliya@gmail.com', '0777123445', 'ucsc', 13131313, '', '6216f8a75fd5bb3d5f22b6f9958cdede3fc086c2'),
-(19, 'pool', 'saliya pool', 'poolsaliya@gmail.com', '1321413', 'mgt', 422143, '', '6216f8a75fd5bb3d5f22b6f9958cdede3fc086c2');
+INSERT INTO `users` (`user_id`, `username`, `fname`, `email`, `contact`, `faculty`, `indexno`, `avatar`, `password`, `flag`) VALUES
+(3, 'facadmin', 'Faculty Admin', 'facadmin@gmail.com', '0777123445', 'ucsc', 422143, '', '6216f8a75fd5bb3d5f22b6f9958cdede3fc086c2', 1),
+(4, 'admin', 'admin', 'admin@gmail.com', '3245523', 'none', 0, '', '6216f8a75fd5bb3d5f22b6f9958cdede3fc086c2', 1),
+(12, 'salitha', 'Salitha Chathuranga', 'salithachathuranga94@gmail.com', '0778787607', 'ucsc', 15020101, '', '6216f8a75fd5bb3d5f22b6f9958cdede3fc086c2', 1),
+(13, 'techpool', 'techpool bro', 'techpool94@gmail.com', '07787876071', 'ucsc', 15020101, '', '6216f8a75fd5bb3d5f22b6f9958cdede3fc086c2', 1),
+(14, 'pool123', 'saliya pool', 'poolsaliya@gmail.com', '0777123445', 'ucsc', 13131313, '', '6216f8a75fd5bb3d5f22b6f9958cdede3fc086c2', 0),
+(20, 'xxx', 'xxx', 'xxx@gmail.com', '0778787607', 'ucsc', 1341242, '', '6216f8a75fd5bb3d5f22b6f9958cdede3fc086c2', 0);
 
 --
 -- Indexes for dumped tables
@@ -393,7 +392,7 @@ ALTER TABLE `schols`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
