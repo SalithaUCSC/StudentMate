@@ -87,7 +87,7 @@
                       <h3>BUS ROUTES</h3>
                           <p>Find the bus routes for places where you want to go.</p>
 
-                      <p><a href="#" class="btn btn-default" role="button">GO</a></p>
+                      <p><a href="<?php echo base_url()?>index.php/Busroutes" class="btn btn-default" role="button">GO</a></p>
                     </div>
                   </div>
                 </div>
@@ -98,7 +98,7 @@
                       <h3>PLACES</h3>
                       <p>Find the places where you want to go with directions.</p>
 
-                      <p><a href="#" class="btn btn-default" role="button">GO</a></p>
+                      <p><a href="<?php echo base_url()?>index.php/Markers" class="btn btn-default" role="button">GO</a></p>
                     </div>
                   </div>
                 </div>

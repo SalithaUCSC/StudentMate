@@ -60,7 +60,7 @@ class Bus_model extends CI_Model
         if($result->num_rows()>0)
         {
             $row=$result->result_array();
-            return $row;
+            return $row[0]['place'];
         }
     }
 }
