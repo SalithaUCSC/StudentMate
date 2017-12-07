@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 06, 2017 at 04:07 PM
+-- Generation Time: Dec 06, 2017 at 04:13 PM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 7.0.8
 
@@ -271,6 +271,63 @@ INSERT INTO `news` (`newsid`, `tname`, `faculty`, `date`, `time`, `content`) VAL
 (39, 'hello', 'mgt', '2017-09-12', '00:45:00', '<p>adassddadfaf</p>\r\n'),
 (40, 'nice to meet you', 'ucsc', '2017-10-03', '23:34:00', '<p>new post</p>\r\n'),
 (43, 'dasfasfsadf', 'ucsc', '2017-10-11', '15:03:00', '<p>fsdaf&nbsp; asdaD A Ad add&nbsp;</p>\r\n');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `places`
+--
+
+CREATE TABLE `places` (
+  `no` int(10) NOT NULL,
+  `place` varchar(50) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `places`
+--
+
+INSERT INTO `places` (`no`, `place`) VALUES
+(1, 'Pettah'),
+(2, 'Fort Railway Station'),
+(3, 'GaminiHall'),
+(4, 'TownHall'),
+(5, 'Public Library'),
+(6, 'Colombo Campus'),
+(7, 'Thibirigasyaya'),
+(25, 'Kirulapone'),
+(26, 'Nugegoda'),
+(27, 'Delkada'),
+(28, 'Maharagama'),
+(29, 'Kottawa'),
+(30, 'Homagama'),
+(50, 'Pamankada'),
+(51, 'Kohuwala'),
+(52, 'Kalubowila'),
+(75, 'Wattala'),
+(76, 'Kiribathgoda'),
+(77, 'Kelaniya'),
+(78, 'Orugodawatta'),
+(100, 'Maradana'),
+(101, 'Borella'),
+(102, 'Narahenpita'),
+(103, 'Rajagiriya'),
+(104, 'Battaramulla'),
+(105, 'Mattakuliya'),
+(106, 'Kotahena'),
+(125, 'Galleface'),
+(126, 'Kollupitiya'),
+(127, 'Bambalapitiya'),
+(128, 'Wellawatta'),
+(129, 'Dehiwala'),
+(130, 'Mount Lavnia'),
+(131, 'Rathmalana'),
+(132, 'Moratuwa'),
+(79, 'Mattakuliya'),
+(80, 'Kotahena'),
+(81, 'Peliyagoda'),
+(134, 'Panadura'),
+(135, 'Angulana');
 
 -- --------------------------------------------------------
 
